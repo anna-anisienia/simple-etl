@@ -46,6 +46,7 @@ def main():  # handler(event, context):
     transformed_df = transform(extracted_df)
     result = load(transformed_df)
     logger.info(result)
+    logger.info('Success, we built our first CI CD pipeline!')
     return result
 
 
